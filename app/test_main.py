@@ -38,7 +38,7 @@ import pytest
     ]
 )
 def test_should_convert_ages_to_human_years(cat_age: int,
-                               dog_age: int,
-                               expected_ages: list[int]
-                               ) -> None:
+                                            dog_age: int,
+                                            expected_ages: list[int]
+                                            ) -> None:
     assert get_human_age(cat_age, dog_age) == expected_ages
